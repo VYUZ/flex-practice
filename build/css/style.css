@@ -1,0 +1,268 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  padding: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  transition: all 0.5s linear 0s;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*End normalising*/
+/*Variables*/
+/* общие стили */
+/* HEADER START */
+/* MAIN START */
+/* COMMON STYLE START */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  color: #445162;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* COMMON STYLE END */
+/* HERO START */
+.hero {
+  background: center center/cover no-repeat scroll #445162;
+  padding: 50px 0;
+}
+
+.hero__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__text {
+  color: white;
+}
+
+.hero__title {
+  font-weight: 400;
+}
+
+.hero__desc-item {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* HERO END */
+/* WHATIS START */
+.whatis {
+  background: #ffffff;
+  padding: 50px 0;
+}
+
+.whatis__row {
+  display: flex;
+}
+
+.whatis__text {
+  color: 333333;
+}
+
+.whatis__title {
+  text-align: left;
+}
+
+.whatis__desc {
+  font-size: 16px;
+  line-height: 24px;
+}
+.whatis__desc > p:first-child {
+  margin-bottom: 30px;
+}
+
+.whatis__img {
+  width: 430px;
+  height: 191px;
+  object-fit: cover;
+  margin: 20px;
+}
+
+/* WHATIS END */
+/* COLUMNS START */
+.columns {
+  background: #f5f5f5;
+  padding: 50px 0;
+}
+
+.columns__title {
+  margin-bottom: 20px;
+}
+
+.columns__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columns__item {
+  border: 1px solid black;
+  flex: 1 1 50%;
+}
+
+/* COLUMNS END */
+/* MAIN END */
+/* FOOTER START */
+/* FOOTER START */
+.footer {
+  height: 65px;
+  background: center center/cover no-repeat scroll #f5f5f5;
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  font-size: 12px;
+  line-height: 24px;
+  color: #445162;
+}
+
+/* FOOTER END */ /* FOOTER END */
+/* @media */
+/* Laptops */
+/* Tablets, Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Phones */
+/* Extra Small Devices, old Phones */
