@@ -11,9 +11,9 @@
     <title>flex-practice</title>
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" as="style" />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" /> -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap&_v=20221207133622" rel="stylesheet" /> -->
     <!--link rel="stylesheet" href="./css/reset.css" /-->
-    <link rel="stylesheet" href="./css/style.css" as="style" />
+    <link rel="stylesheet" href="./css/style.css?_v=20221207133622" as="style" />
     <!--link rel="stylesheet" href="./css/style.min.css" as="style" /-->
     <!--link rel="stylesheet" href="./css/flexboxgrid2.min.css" /-->
     <!--link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" /-->
@@ -37,14 +37,14 @@
                 <li class="hero__desc-item">Спасибо тебе за поддержку!</li>
               </ul>
             </div>
-            <img class="hero__img" src="@img/image.jpg" alt="image" />
+            <picture><source srcset="img/image.webp" type="image/webp"><img class="hero__img" src="img/image.jpg" alt="image" /></picture>
           </div>
         </section>
         <!--HERO END-->
         <!-- WHATIS START-->
         <section class="whatis">
           <div class="whatis__row container">
-            <img class="whatis__img" src="@img/image_2.jpg" alt="what is Flexbox" />
+            <picture><source srcset="img/image_2.webp" type="image/webp"><img class="whatis__img" src="img/image_2.jpg" alt="what is Flexbox" /></picture>
             <div class="whatis__text">
               <h2 class="whatis__title">Что такое FlexBox?</h2>
               <div class="whatis__desc">
@@ -68,7 +68,7 @@
             <h2 class="columns__title">Колонки с flex-контейнерами</h2>
             <ul class="columns__list">
               <li class="columns__item">
-                <img class="columns__img" src="@img/image_3.jpg" alt="image3" />
+                <picture><source srcset="img/image_3.webp" type="image/webp"><img class="columns__img" src="img/image_3.jpg" alt="image3" /></picture>
                 <div class="columns__text">
                   <h3 class="columns__subtitle">The description for the image</h3>
                   <div class="columns__desc">
@@ -79,7 +79,7 @@
                 </div>
               </li>
               <li class="columns__item">
-                <img class="columns__img" src="@img/image_3.jpg" alt="image3" />
+                <picture><source srcset="img/image_3.webp" type="image/webp"><img class="columns__img" src="img/image_3.jpg" alt="image3" /></picture>
                 <div class="columns__text">
                   <h3 class="columns__subtitle">The description for the image</h3>
                   <div class="columns__desc">
@@ -90,7 +90,7 @@
                 </div>
               </li>
               <li class="columns__item">
-                <img class="columns__img" src="@img/image_3.jpg" alt="image3" />
+                <picture><source srcset="img/image_3.webp" type="image/webp"><img class="columns__img" src="img/image_3.jpg" alt="image3" /></picture>
                 <div class="columns__text">
                   <h3 class="columns__subtitle">The description for the image</h3>
                   <div class="columns__desc">
@@ -101,7 +101,7 @@
                 </div>
               </li>
               <li class="columns__item">
-                <img class="columns__img" src="@img/image_3.jpg" alt="image3" />
+                <picture><source srcset="img/image_3.webp" type="image/webp"><img class="columns__img" src="img/image_3.jpg" alt="image3" /></picture>
                 <div class="columns__text">
                   <h3 class="columns__subtitle">The description for the image</h3>
                   <div class="columns__desc">
@@ -166,10 +166,12 @@
       </main>
       <!--MAIN SECTION END-->
       <!--FOOTER SECTION START-->
-      @@include("html/footer.html")
+      <footer class="footer">
+    <p class="footer__text container">Фрилансер по жизни 2019</p>
+</footer>
       <!--FOOTER SECTION END-->
     </div>
-    <!-- <script src="./js/main.js" type="module"></script> -->
+    <!-- <script src="./js/main.js?_v=20221207133622" type="module"></script> -->
     <!--script src="./js/main.min.js" type="module"></script-->
   </body>
 </html>
